@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="restsignup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div>
+        <div></div>
+        <h1 class="head">Restaurant Sign Up Page</h1>
+        <div class="form">
+            
+                <h3>Sign UP</h3>
+                <input type="text" placeholder="Rest Name" id="restname">
+                <br>
+                <input type="email" value="" placeholder="Email" id="restemail"><br> 
+                <input type="text" placeholder="Country" id="restcountry"><br>
+                <input type="text" placeholder="City" id="restcity"><br>
+                <input type="password" placeholder="Password" id="restpassword"><br>
+                <button onclick="restsignup()">Sign Up</button>
+                <a href="restlogin.html">Log in from Here</a>
+
+
+
+               
+            </form>
+        </div>
+    </div>
+     
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+          
+          <span class="close" onclick="close_popup()">&times;</span>
+          <h3>Error</h3>
+          <p id="modalpara">Some text</p>
+        </div>
+      </div>
+
+
+      <script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyB6mJtumyuX9QWkvZGrC11CSM3md6MMi7c",
+    authDomain: "fir-ae32a.firebaseapp.com",
+    databaseURL: "https://fir-ae32a-default-rtdb.firebaseio.com",
+    projectId: "fir-ae32a",
+    storageBucket: "fir-ae32a.appspot.com",
+    messagingSenderId: "321962192450",
+    appId: "1:321962192450:web:35f5c128f494d8cf7847db",
+    measurementId: "G-TVXRMW33QE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js"></script>
+    
+</body>
+</html>

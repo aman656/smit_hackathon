@@ -1,0 +1,58 @@
+.new-expense_controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    width: 45rem;
+    max-width: 90%;
+    padding-top: 1.5rem;
+  }
+ 
+  
+  .new-expense_control label {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .new-expense_control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+  }
+  .new-expense_control input:focus{
+    outline: none !important;
+    border:1px solid rebeccapurple
+
+  }
+  
+  .new-expense_actions {
+    
+    
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+  }
+  button{
+    width: 23%;
+    margin:1rem auto;
+    font-size: 1.75rem;
+    color: rgb(177, 177, 177);
+    border: 1px solid rgb(177, 177, 177);
+    background-color: white;
+    cursor: pointer;
+    padding-top:0.25rem;
+    padding-bottom: 0.25rem;
+}
+button:hover{
+  border:1px solid rebeccapurple;
+  color: rebeccapurple;
+}
+  

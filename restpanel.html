@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="displayingrestitems()">
+    <header class="header">
+        <h1>Desi Meals</h1>
+        <!-- <h2>Logout</h2> -->
+        
+        <!-- <button onclick="restsignout()">LogOut</button> -->
+
+    </header>
+    
+</div>
+<div class="mainimg">
+    <img src="images/meals.jpg" alt="" srcset="">
+    
+</div>
+<section class = "section">
+    <h2>Delicious Food, Delivered To You</h2>
+    <p>Choose your favorite meal from our broad selection of available meals and enjoy a delicious lunch or dinner at home.</p>
+    <a href="RestSignup.html">Sign Up For Restaurant</a>
+    <a href="./customerfolder/CustomerSignUp.html">Sign Up for Customer</a>
+    
+  </section>
+  <div class="footer">
+    <button onclick="showdashboard()">Show Dashboard</button>
+    <button onclick="additemformdisplay()">Add Item</button>
+</div> 
+  <div class="card" id="card" >
+
+  </div>
+  <div id="my-modal" class="modal" style="display: none">
+    <div class="modal-content">
+      <div class="modal-inner">
+      <h3>Add item Form</h3>
+      
+      <span class="close" onclick="close_popup()">&times;</span>
+    </div>
+      <div class="modal-inner">
+
+      <label for="">Item name</label>
+      <input type="text" id="item_name">
+    </div>
+    <div class="modal-inner">
+      <label for="">Item Price</label>
+      <input type="number" id="item_price">
+    </div>
+    <div class="modal-inner">
+      <label for="">Item category</label>
+      <select name="" id="item_category">
+          <option value="italian">Italian</option>
+          <option value="chinese">Chinese</option>
+          <option value="Pakistani">Pakistani</option>
+          <option value="desi">Desi</option>
+          <option value="others">Others</option>
+      </select>
+    
+    </div>
+    <div class="modal-inner">
+      <label for="">Upload Picture</label>
+      <input type="file" id="food_pic">
+    </div>
+      <div class="modal-inner">
+
+      <label for="">Delivery type</label>
+      <select name="" id="delivery_version">
+          <option value="free">Free</option>
+          <option value="paid">Paid</option>
+      </select>
+    </div>
+    <div class="modal-end">
+        <button onclick="addRestitem()">Add item</button>
+    </div>
+     
+    
+      
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- 
+   <div class="additem">
+    <div class="new-expense_controls" id="form">
+        <div class='new-expense_control'>
+            <label>Enter Category </label>
+            <input type='text' id="cater" />
+
+        </div >
+        <div class='new-expense_control'>
+            <label>Enter Name</label>
+            <input  type="text" id="name" />
+
+        </div>
+        <div class='new-expense_control'>
+            <label>Enter Price</label>
+            <input  type="number" id="price"/>
+
+        </div>
+        <div class='new-expense_actions'>
+            <button type="button" onclick="addRestitem()">Add item</button>
+            <button onclick="hidingnew_item_form()">Cancel</button>
+            
+        
+        </div>
+
+    </div>
+    </div> -->
+  
+
+
+
+          
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    
+    <script>
+    
+      var firebaseConfig = {
+        apiKey: "AIzaSyB6mJtumyuX9QWkvZGrC11CSM3md6MMi7c",
+        authDomain: "fir-ae32a.firebaseapp.com",
+        databaseURL: "https://fir-ae32a-default-rtdb.firebaseio.com",
+        projectId: "fir-ae32a",
+        storageBucket: "fir-ae32a.appspot.com",
+        messagingSenderId: "321962192450",
+        appId: "1:321962192450:web:35f5c128f494d8cf7847db",
+        measurementId: "G-TVXRMW33QE"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  <script src="app.js"></script>
+    
+</body>
+</html>

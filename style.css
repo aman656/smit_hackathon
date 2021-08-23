@@ -1,0 +1,335 @@
+/* Home Page STYLING */
+
+
+
+.card{ max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 5rem;
+  background-color: #8a2b06;
+  color: gray;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+ padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+ 
+ 
+}
+.mainimg {
+  width: 100%;
+  height: 25rem;
+  z-index: 0;
+  overflow:inherit;
+  margin-top: 1rem;
+}
+  
+.mainimg img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
+.header h1{
+    font-size: 2.5rem;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    display: inline;
+}
+/* .header h2{
+  font-size: 2rem;
+  font-style: oblique;
+  border-radius: 15px;
+  background-color: #4d1601;
+  padding: 0.3rem 0.5rem;
+  color: #e9e9e9;
+  cursor: pointer;
+
+}  */
+
+  .section {
+    text-align: center;
+    max-width: 45rem;
+    width: 90%;
+    margin: auto;
+    margin-top: -12rem;
+    position: relative;
+    background-color: #383838;
+    color: rgb(230, 227, 227);
+    border-radius: 14px;
+    padding: 1rem;
+     box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25); 
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: 300;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .section p{
+    font-size: 1.2rem;
+    text-align: center;
+   
+  }
+
+  .section a{
+      text-decoration: none;
+      font-size: 1rem;
+      color:white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 2rem;
+      margin-bottom: 3rem;
+      font-style: italic;
+      font-weight: bold;
+
+  }
+  @media(max-width:660px) {
+    .section a{
+      font-size: 0.8rem;
+      margin: 1rem;
+     }/*
+    .header h1{
+      font-size: 1.5rem;
+    } */
+    
+  }
+  .section a:hover{
+      /* font-size: 1.8rem; */
+      border-bottom: 2px solid #8a2b06;
+  }
+
+
+  .footer{
+    display: flex;
+    margin: 2rem auto;
+    text-align: center;
+  
+  
+}
+.footer button{
+
+  width: 20%;
+  font: inherit;
+  margin: 1rem auto;
+
+  
+  text-align: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  
+  font-family: serif;
+  font-style: italic;
+
+  border: none;
+  background-color: #4d1601;
+  color: white;
+padding: 0.5rem 1rem;
+
+
+  align-items: center;
+  border-radius: 20px;
+  align-items: center;
+  font-weight: normal;
+
+}
+/* .header button{
+  
+  width: 15%;
+  cursor: pointer;
+  font: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+
+  border: none;
+  background-color: #4d1601;
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+
+  align-items: center;
+  border-radius: 25px;
+  font-weight: normal;
+  margin-left: 45rem;
+
+    
+  }
+  button:hover{
+    
+      background-color: #2c0d00;
+    
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/*  
+.additem{
+  display: block;
+}  */
+
+.new-expense_controls {
+  
+display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  width: 45rem;
+  max-width: 90%;
+  padding-top: 1.5rem;
+}
+
+
+.new-expense_control label {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.new-expense_control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+.new-expense_control input:focus{
+  outline: none !important;
+  border:1px solid rebeccapurple
+
+}
+
+.new-expense_actions {
+  
+  
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+}
+button{
+  width: 23%;
+  margin:1rem auto;
+  font-size: 1.75rem;
+  color: rgb(177, 177, 177);
+  border: 1px solid rgb(177, 177, 177);
+  background-color: white;
+  cursor: pointer;
+  padding-top:0.25rem;
+  padding-bottom: 0.25rem;
+}
+button:hover{
+border:1px solid none;
+color:gray
+}
+
+/*************** adding item modal *****/
+
+
+.modal {
+  display: none;
+position: fixed;
+z-index: 1; 
+  padding-top: 60px;
+  left: 0; 
+  top: 0;
+  
+  width: 100%;
+  height: 100%;
+  overflow:auto; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 2rem auto;
+}
+.modal-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 50%;  
+  border-radius: 7px;
+}
+.close {
+  float: right; 
+  color: #aaaaaa; 
+  font-size: 28px;  
+  font-weight: bold;
+}
+.close:hover {
+  color: darkgray;
+  cursor: pointer;
+}
+.modal h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+.modal label{
+  color:black ;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.modal select{
+  width: 30%;
+  
+}
+.modal-inner{
+  display: flex;
+ 
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+}
+.modal input{
+ 
+  width: 30%;
+}
+.modal-end{
+  margin: 2rem auto;
+  text-align: center;
+  color: black;
+}
+.modal-end button{
+  color: black;
+}
+.modal-end button:hover{
+  color: #8a2b06;
+  border: 1px solid #8a2b06;
+} 
+
+
+  

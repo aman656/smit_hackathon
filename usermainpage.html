@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="usermain.css">
+</head>
+<body onload = "displayingallitems()">
+
+    <header class="header">
+        <h1>Desi Meals</h1>
+        <button class="button"  onclick="orderitemlasttime()">
+            <span class="icon">
+                <svg
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 20 20'
+                fill='currentColor'
+              >
+                <path d='M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z' />
+              </svg>
+            </span>
+            <span>Your Cart</span>
+      
+            <span class="badge" id="badge" >0</span>
+          </button>
+
+    </header>
+    
+</div>
+<div class="mainimg">
+    <img src="images/meals.jpg" alt="" srcset="">
+    
+</div>
+<section class = "section">
+    <h2>Delicious Food, Delivered To You</h2>
+    <p>Choose your favorite meal from our broad selection of available meals and enjoy a delicious lunch or dinner at home.</p>
+    <a href="RestSignup.html">Sign Up For Restaurant</a>
+    <a href="home.html" onclick="loggingoutuser()">Logout</a>
+</section>
+
+    <div class="selecting_category">
+        <select name="" id="food_category" onchange="Looping()">
+            <option value="chinese">chinese</option>
+            <option value="pakistani">Pakistani</option>
+        </select>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+
+            <h3>Thanks!</h3>
+            <h4>Order Processed</h4>
+            <h5>You will very soon get your orders <br>So keep your hands tight</h5>
+            <button onclick="usermodalclose()">Ok</button>
+
+        </div>
+
+    </div>
+    <div class="error_modal" id="error_modal">
+        <div class="error_modal_content">
+        <h5>You don't have any item in the cart</h5>
+        <button onclick="usererrormodalclose()">Close</button>
+    </div>
+    </div>
+    
+  
+  <div class="card" id="card">
+       
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  
+  <script>
+  
+    var firebaseConfig = {
+      apiKey: "AIzaSyB6mJtumyuX9QWkvZGrC11CSM3md6MMi7c",
+      authDomain: "fir-ae32a.firebaseapp.com",
+      databaseURL: "https://fir-ae32a-default-rtdb.firebaseio.com",
+      projectId: "fir-ae32a",
+      storageBucket: "fir-ae32a.appspot.com",
+      messagingSenderId: "321962192450",
+      appId: "1:321962192450:web:35f5c128f494d8cf7847db",
+      measurementId: "G-TVXRMW33QE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

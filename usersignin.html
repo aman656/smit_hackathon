@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="userlogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="head">Customer Sign In Page</h1>
+    <div class="form">
+        
+            <h3>Sign In</h3>
+            <input type="text" placeholder="Username" id="username">
+            <br>
+            <input type="email" value="" placeholder="Email" id="useremail"><br> 
+            <input type="password" placeholder="Password" id="userpassword"><br>
+            <button onclick="useraftersignin()">Sign In</button>
+            <a href="CustomerSignUp.html">Sign Up from Here</a>
+
+           
+        
+    </div>
+      
+<div id="my-modal" class="modal">
+    <div class="modal-content">
+      
+      <span class="close" onclick="close_popup()">&times;</span>
+      <h3>Error</h3>
+      <p id="modalpara">Some text</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+      
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  
+ <script>
+  
+    var firebaseConfig = {
+      apiKey: "AIzaSyB6mJtumyuX9QWkvZGrC11CSM3md6MMi7c",
+      authDomain: "fir-ae32a.firebaseapp.com",
+      databaseURL: "https://fir-ae32a-default-rtdb.firebaseio.com",
+      projectId: "fir-ae32a",
+      storageBucket: "fir-ae32a.appspot.com",
+      messagingSenderId: "321962192450",
+      appId: "1:321962192450:web:35f5c128f494d8cf7847db",
+      measurementId: "G-TVXRMW33QE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+  
+    <script src="../app.js"></script>
+
+
+
+    
+</body>
+</html>
